@@ -1,25 +1,17 @@
 
 export function add(numbers) {
-  let sum =0;
-  for(let i=0;i<numbers.length;i++){
-    sum=sum+numbers[i];
-  }
-  return {sum}
+  return numbers.reduce((sum, num) => sum + num, 0);
 }
 
 export function subtract(numbers) {
-  let sub =numbers[i];
-  for(let i=1;i<numbers.length;i++){
-    sub=sub-numbers[i];
-  }
-  return {sub}
+  return numbers.reduce((dif, num) => dif - num, 1);
 }
 
 export function multiply(numbers) {
-  return {/*write code here*/}
+  return numbers.reduce((mul, num) => mul * num, 0)
 }
 
 export function divide(numbers) {
-  return {/*write code here*/}
+  return numbers.reduce((div, num) => div/num, 1)
 }
 
